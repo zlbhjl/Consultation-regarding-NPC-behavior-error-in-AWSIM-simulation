@@ -1,0 +1,126 @@
+---------------------------------------------
+ Loop 20 / 20 開始
+---------------------------------------------
+  [入力] Script Client コマンド実行
+  >>> 実行中... (Monitorの検知待ち, Timeout: 300s)
+/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+[INFO] [1768888002.893801958] [awsimscript_client]: Sending Map Network Request
+[INFO] [1768888002.899891231] [awsimscript_client]: Map Network Response: True
+
+Starting scenario
+[initial_pose_adaptor_node-80] [INFO] [1768888002.908633198] [default_adapi.helpers.autoware_initial_pose_adaptor]: fit_target: pointcloud_map, frame: map
+[autoware_duplicated_node_checker_node-4] [WARN] [1768888002.911822362] [system.duplicated_node_checker]: /awsimscript_client node is duplicated.
+[autoware_ndt_scan_matcher_node-38] [WARN] [1768888003.039953814] [localization.pose_estimator.ndt_scan_matcher]: Score is below the threshold. Score: 0.793568, Threshold: 1
+[autoware_ndt_scan_matcher_node-38] [WARN] [1768888003.243710464] [localization.pose_estimator.ndt_scan_matcher]: Score is below the threshold. Score: 0.836706, Threshold: 1
+[autoware_pose_initializer_node-40] [INFO] [1768888003.371288895] [localization.util.pose_initializer]: EKF triggering service is available!
+[autoware_pose_initializer_node-40] [INFO] [1768888003.371461460] [localization.util.pose_initializer]: EKF Deactivation succeeded
+[autoware_pose_initializer_node-40] [INFO] [1768888003.371522996] [localization.util.pose_initializer]: NDT triggering service is available!
+[autoware_pose_initializer_node-40] [INFO] [1768888003.371685231] [localization.util.pose_initializer]: NDT Deactivation succeeded
+[autoware_pose_initializer_node-40] [INFO] [1768888003.372111764] [localization.util.pose_initializer]: Call align server.
+[autoware_ekf_localizer_node-42] [WARN] [1768888003.384991621] [localization.pose_twist_fusion_filter.ekf_localizer]: The node is not activated. Provide initial pose to pose_initializer
+[component_container_mt-1] [WARN] [1768888003.935684622] [perception.occupancy_grid_map.occupancy_grid_map_node]: Lookup would require extrapolation into the future.  Requested time 904.719581 but the latest data is at time 904.660443, when looking up transform from frame [base_link] to frame [map]
+[component_container_mt-1] [WARN] [1768888003.944440986] [lidar_centerpoint]: Lookup would require extrapolation into the future.  Requested time 904.719581 but the latest data is at time 904.660443, when looking up transform from frame [map] to frame [base_link]
+[component_container_mt-1] [WARN] [1768888003.944484328] [lidar_centerpoint]: Fail to preprocess and skip to detect.
+[traffic_light_map_based_detector_node-57] [WARN] [1768888004.219293777] [perception.traffic_light_recognition.traffic_light.detection.traffic_light_map_based_detector]: cannot get transform from map frame to camera frame
+[autoware_topic_state_monitor_node-11] [WARN] [1768888004.412768650] [system.topic_state_monitor_pose_twist_fusion_filter_pose]: /localization/pose_twist_fusion_filter/pose topic is timeout. Set ERROR in diagnostics.
+[autoware_topic_state_monitor_node-12] [WARN] [1768888004.412794920] [system.topic_state_monitor_obstacle_segmentation_pointcloud]: /perception/obstacle_segmentation/pointcloud topic is timeout. Set ERROR in diagnostics.
+[autoware_topic_state_monitor_node-22] [WARN] [1768888004.412799108] [system.topic_state_monitor_transform_map_to_base_link]: /tf topic is timeout. Set ERROR in diagnostics.
+[component_container_mt-76] [ERROR] [1768888004.444684614] [control.collision_detector]: Failed to get transform from object frame to base_link
+[component_container_mt-1] [WARN] [1768888004.448460953] [lidar_centerpoint]: Lookup would require extrapolation into the future.  Requested time 905.219544 but the latest data is at time 904.660443, when looking up transform from frame [map] to frame [base_link]
+[component_container_mt-1] [WARN] [1768888004.448500216] [lidar_centerpoint]: Fail to preprocess and skip to detect.
+[component_container_mt-1] [WARN] [1768888004.449648979] [perception.occupancy_grid_map.occupancy_grid_map_node]: Lookup would require extrapolation into the future.  Requested time 905.219544 but the latest data is at time 904.660443, when looking up transform from frame [base_link] to frame [map]
+[rviz2-83] [INFO] [1768888004.457273583] [rviz2]: Message Filter dropping message: frame 'base_link' at time 904.720 for reason 'discarding message because the queue is full'
+[autoware_pose_initializer_node-40] [INFO] [1768888004.826854703] [localization.util.pose_initializer]: align server succeeded.
+[autoware_pose_initializer_node-40] [INFO] [1768888004.827829649] [localization.util.pose_initializer]: EKF triggering service is available!
+[autoware_pose_initializer_node-40] [INFO] [1768888004.828020548] [localization.util.pose_initializer]: EKF Activation succeeded
+[autoware_pose_initializer_node-40] [INFO] [1768888004.828112501] [localization.util.pose_initializer]: NDT triggering service is available!
+[autoware_pose_initializer_node-40] [INFO] [1768888004.828340260] [localization.util.pose_initializer]: NDT Activation succeeded
+[autoware_ekf_localizer_node-42] [WARN] [1768888004.829094820] [localization.pose_twist_fusion_filter.ekf_localizer]: EKF period may be too slow to finish pose smoothing!! (1.464645 sec) 
+[autoware_pose_initializer_node-40] [INFO] [1768888004.830719940] [localization.util.pose_initializer]: EKF triggering service is available!
+[autoware_pose_initializer_node-40] [INFO] [1768888004.830866906] [localization.util.pose_initializer]: EKF Deactivation succeeded
+[autoware_pose_initializer_node-40] [INFO] [1768888004.830993645] [localization.util.pose_initializer]: NDT triggering service is available!
+[autoware_pose_initializer_node-40] [INFO] [1768888004.831183272] [localization.util.pose_initializer]: NDT Deactivation succeeded
+[autoware_pose_initializer_node-40] [INFO] [1768888004.831249727] [localization.util.pose_initializer]: Call align server.
+[component_container-61] [WARN] [1768888004.835003564] [perception.traffic_light_recognition.traffic_light_arbiter.arbiter]: Published traffic signal messages are not latest
+[autoware_ekf_localizer_node-42] [WARN] [1768888005.390494807] [localization.pose_twist_fusion_filter.ekf_localizer]: The node is not activated. Provide initial pose to pose_initializer
+[component_container_mt-1] [WARN] [1768888005.433688661] [lidar_centerpoint]: Lookup would require extrapolation into the future.  Requested time 906.219653 but the latest data is at time 906.125088, when looking up transform from frame [map] to frame [base_link]
+[component_container_mt-1] [WARN] [1768888005.433729448] [lidar_centerpoint]: Fail to preprocess and skip to detect.
+[component_container_mt-1] [WARN] [1768888005.435658490] [perception.occupancy_grid_map.occupancy_grid_map_node]: Lookup would require extrapolation into the future.  Requested time 906.219653 but the latest data is at time 906.125088, when looking up transform from frame [base_link] to frame [map]
+[component_container_mt-76] [ERROR] [1768888005.436369428] [control.collision_detector]: Failed to get transform from object frame to base_link
+[autoware_pose_initializer_node-40] [INFO] [1768888005.896473181] [localization.util.pose_initializer]: align server succeeded.
+[autoware_pose_initializer_node-40] [INFO] [1768888005.897965590] [localization.util.pose_initializer]: EKF triggering service is available!
+[autoware_pose_initializer_node-40] [INFO] [1768888005.898494095] [localization.util.pose_initializer]: EKF Activation succeeded
+[autoware_pose_initializer_node-40] [INFO] [1768888005.898773601] [localization.util.pose_initializer]: NDT triggering service is available!
+[autoware_pose_initializer_node-40] [INFO] [1768888005.898957938] [localization.util.pose_initializer]: NDT Activation succeeded
+[INFO] [1768888005.900543193] [awsimscript_client]: Re-Localization succeeded.
+[INFO] [1768888005.900789596] [awsimscript_client]: Spawned ego and re-localized successfully.
+[autoware_ekf_localizer_node-42] [WARN] [1768888005.910315249] [localization.pose_twist_fusion_filter.ekf_localizer]: EKF period may be too slow to finish pose smoothing!! (1.081534 sec) 
+[INFO] [1768888006.901633293] [awsimscript_client]: Setting Ego destination done
+[INFO] [1768888006.901996857] [awsimscript_client]: Spawned NPC vehicle npc1
+[component_container_mt-64] [INFO] [1768888007.307357414] [route_handler]: getMainLanelets: lanelet_sequence = [ids: 319 120 ]
+[component_container_mt-64] [INFO] [1768888007.307962904] [planning.mission_planning.mission_planner]: initial pose - x: 81636.426259, y: 50574.269500, z: 39.101286
+[component_container_mt-64] [INFO] [1768888007.307986889] [planning.mission_planning.mission_planner]: initial orientation - qx: -0.001807, qy: -0.001790, qz: -0.639790, qw: 0.768546
+[component_container_mt-64] [INFO] [1768888007.307993101] [planning.mission_planning.mission_planner]: goal pose - x: 81659.970200, y: 50446.345489, z: 40.457578
+[component_container_mt-64] [INFO] [1768888007.307997930] [planning.mission_planning.mission_planner]: goal orientation - qx: 0.000000, qy: 0.000000, qz: -0.639819, qw: 0.768525
+[INFO] [1768888007.324456613] [awsimscript_client]: Autonomous operation mode is ready.
+[INFO] [1768888007.328974028] [awsimscript_client]: Autonomous mode activated.
+[INFO] [1768888007.329074677] [multi_topic_recorder]: [EgoEstimatedKinematicTopic] Started recording data.
+[INFO] [1768888007.329222205] [multi_topic_recorder]: [GroundTruthKinematicTopic] Started recording data.
+[INFO] [1768888007.329318276] [multi_topic_recorder]: [GroundTruthSizeTopic] Started recording data.
+[INFO] [1768888007.329409367] [multi_topic_recorder]: [PerceptionObjectTopic] Started recording data.
+[INFO] [1768888007.329506009] [multi_topic_recorder]: [BoundingBoxPerceptionObjectTopic] Started recording data.
+[INFO] [1768888007.329624012] [multi_topic_recorder]: [PlanningTrajectoryTopic] Started recording data.
+[INFO] [1768888007.329842573] [multi_topic_recorder]: [ControlCommandTopic] Started recording data.
+[INFO] [1768888007.330050244] [multi_topic_recorder]: [CameraFootageTopic] Started recording data.
+[INFO] [1768888007.330165641] [multi_topic_recorder]: [AWSIMMetadataTopic] Started recording data.
+[component_container_mt-69] [INFO] [1768888007.347142501] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner]: New uuid route is received. Resetting modules.
+[component_container_mt-69] [INFO] [1768888007.347385999] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.start_planner]: freespace planner callback finished
+[component_container_mt-69] [INFO] [1768888007.347609279] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.goal_planner]: lane parking and freespace parking callbacks finished
+[autoware_raw_vehicle_cmd_converter_node-3] [WARN] [1768888007.399932450] [autoware_raw_vehicle_cmd_converter.accel_map]: Exceeding the acc range. Desired acc: -3.396200 < min acc on map: -2.201000. return max value.
+[autoware_mrm_handler_node-28] [INFO] [1768888007.512835815] [system.mrm_handler]: MRM State changed: NORMAL -> MRM_OPERATING
+[autoware_mrm_handler_node-28] [WARN] [1768888007.512894665] [system.mrm_handler]: MRM behavior is None. Do nothing.
+[autoware_mrm_handler_node-28] [WARN] [1768888007.513163512] [system.mrm_handler]: EMERGENCY_STOP is operated.
+[component_container_mt-75] [WARN] [1768888007.523199114] [control.vehicle_cmd_gate]: Emergency!
+[component_container_mt-75] [INFO] [1768888007.533831881] [control.vehicle_cmd_gate]: The operation mode is changed, but the TurnIndicatorsCommand is not received yet:
+[autoware_mrm_handler_node-28] [INFO] [1768888007.605979160] [system.mrm_handler]: MRM State changed: MRM_OPERATING -> MRM_SUCCEEDED
+[component_container_mt-75] [INFO] [1768888007.627426546] [control.vehicle_cmd_gate]: The operation mode is changed, but the TurnIndicatorsCommand is not received yet:
+[component_container_mt-75] [INFO] [1768888007.731026477] [control.vehicle_cmd_gate]: The operation mode is changed, but the TurnIndicatorsCommand is not received yet:
+[component_container_mt-75] [INFO] [1768888007.834249338] [control.vehicle_cmd_gate]: The operation mode is changed, but the TurnIndicatorsCommand is not received yet:
+[autoware_mrm_handler_node-28] [INFO] [1768888007.906424029] [system.mrm_handler]: MRM State changed: MRM_SUCCEEDED -> NORMAL
+[autoware_mrm_handler_node-28] [WARN] [1768888007.906712943] [system.mrm_handler]: EMERGENCY_STOP is canceled.
+[autoware_duplicated_node_checker_node-4] [WARN] [1768888008.010034210] [system.duplicated_node_checker]: /awsimscript_client node is duplicated.
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/passd/AWSIMScriptPy/scenarios/cutin/example.py", line 16, in <module>
+    scenario_manager.run([scenario])
+  File "/home/passd/AWSIMScriptPy/core/scenario_manager.py", line 138, in run
+    self.reset(init_new=len(scenarios)>0)
+  File "/home/passd/AWSIMScriptPy/core/scenario_manager.py", line 126, in reset
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[INFO] [1768888018.914281181] [awsimscript_client]: Sent follow lane command to npc1 successfully.
+[ERROR] [1768888020.316031051] [awsimscript_client]: [ERROR] The lateral velocity is greater than the current speed. Ignore lane change.
+[autoware_raw_vehicle_cmd_converter_node-3] [WARN] [1768888035.719650857] [autoware_raw_vehicle_cmd_converter.accel_map]: Exceeding the acc range. Desired acc: -3.365889 < min acc on map: -2.201000. return max value.
+[INFO] [1768888036.610497828] [awsimscript_client]: Goal arrived
+[INFO] [1768888036.610522074] [multi_topic_recorder]: Simulation is terminating, saving recorded data...
+Saving text data...
+[INFO] [1768888036.610666045] [awsimscript_client]: Scenario terminated
+[INFO] [1768888036.613057639] [awsimscript_client]: NPCs removed.
+[INFO] [1768888036.613742328] [awsimscript_client]: Route clearing: False, The route cannot be cleared while it is in use.
+[service_log_checker_node-6] [ERROR] [1768888036.613525179] [system.service_log_checker]: /api/routing/clear_route: status code 50000 'The route cannot be cleared while it is in use.' (/adapi/node/routing)
+Recorded text data saved to /home/passd/simulation_traces/uturn_test_sim20
+Saving camera images (if any) as footage...
+[INFO] [1768888037.092463095] [multi_topic_recorder]: Approximated FPS: 9.88
+  >>> 成功: ファイル生成を確認（20個）
+[INFO] [1768888039.194585788] [multi_topic_recorder]: Camera footage saved to /home/passd/simulation_traces/uturn_test_sim20_footage.mp4.
+
